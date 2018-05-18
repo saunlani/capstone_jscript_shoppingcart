@@ -224,7 +224,12 @@
             }
             
             function loadCart() {
-                cart = JSON.parse(localStorage.getItem("shoppingCart"))
+	        var rawCart = localStorage.getItem("shoppingCart");
+	        if (rawCart) {
+                cart = JSON.parse(localStorage.getItem("shoppingCart"));
+            } else {
+                cart = []; // start with empty cart the first time.
+            }
             }
             
             loadCart();
