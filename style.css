@@ -1,0 +1,40 @@
+body {
+    background-color: #F4F4F4;
+    font-family: Helvetica, Arial, sans-serif;
+}
+a {
+    color: #373737;
+}
+ul {
+    list-style: none;
+}
+#container {
+    background-color: #DCD0C0;
+    text-align: center;
+    margin: 0px auto 0px auto;
+    
+}
+#header {
+    margin: -20px;
+    padding:1px;
+    background-color: #F4F4F4;
+    color: #373737;
+    text-align: center;
+}
+
+#footer {
+    background-color: #373737;
+    text-align:center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color:#C0B283;
+}
+#itemsclump
+{
+    padding:29px;
+}
+#itemsclump ul
+{
+    list-style: none;
+    padding: 0;
+}

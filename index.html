@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="stylesheet" type="text/css" href="style.css">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -8,10 +9,16 @@
     <title> Shopping Cart </title>
     </head>
     
-    <body>
-    <h1>Shopping Cart</h1>
+    <div id ="container">
+        <div id ="header">
+            <h1>Shopping Cart</h1>
+            
+        </div>
         
-        <div>
+    <body>
+    
+        
+        <div id ="itemsclump">
         <ul><li><a class="add-to-cart" href ="a" data-name="Apple" data-price=".99">Apple $.99</a></li>
             <li><a class="add-to-cart" href ="#" data-name="Mango" data-price=".90">Mango $.90</a></li>
             <li><a class="add-to-cart" href ="#" data-name="Banana" data-price=".25">Banana $.25</a></li>
@@ -21,14 +28,19 @@
             
             <button id="checkout">Checkout</button>
         </div>
-        
-        <ul id="show-cart">
-            
+
+        <ul id="show-cart">   
         </ul>
         <div id="totals" style="display:none;">Subtotal: $<span id="subtotal"></span>
         <div>Tax: $<span id="tax"></span></div>
         <div>Grand Total: $<span id="grand-total"></span>
         </div>
+            </div>
+       
+                <div id="footer">
+            Copyright &copy; 2018 Shaun Ittner
+            </div>
+        
         <script>
             
             $("#subtotal").html("99.75");
